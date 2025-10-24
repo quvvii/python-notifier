@@ -70,4 +70,5 @@ def main():
 
 
 if __name__ == "__main__":
+    send_notification("<b>Bot is working!</b>")
     main()
