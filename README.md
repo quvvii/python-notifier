@@ -18,6 +18,7 @@ TELEGRAM_ADMIN_ID=
 - `SEND_ALERT_TIME` - the time interval between sending messages to Telegram
 - `SERVER_NAME` - your server name
 - `MESSAGE_BODY` - message that sends to Telegram
+- `TIMEZONE` - your time relative to UTC (timestamp will be UTC + YOUR TIMEZONE hours)
 
 3. Build the image: 
 ```bash
