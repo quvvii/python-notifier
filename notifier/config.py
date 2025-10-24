@@ -10,5 +10,7 @@ CPU_MAX_PERSENT = 80.0
 RAM_MAX_PERSENT = 80.0
 SEND_ALERT_TIME = 20
 
+TIMEZONE = 3
+
 MESSAGE_BODY = "{ip} - <b>{server_name}</b>\n\n<blockquote>{message}</blockquote>\n\n<i>{timestamp}</i>"
 SERVER_NAME = "My server"
