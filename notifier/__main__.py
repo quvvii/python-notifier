@@ -26,7 +26,7 @@ def format_message(message):
         ip=get_ip(),
         server_name=config.SERVER_NAME,
         message=message,
-        timestamp=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=3))).strftime("%d.%m.%Y %H:%M:%S")
+        timestamp=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=config.TIMEZONE))).strftime("%d.%m.%Y %H:%M:%S")
     )
 
 
@@ -65,7 +65,9 @@ def main():
             message += f"\n<b>RAM is overloaded:</b> <code>{metrics[1]}%</code>" \
                 if message != "" else f"<b>RAM is overloaded:</b> <code>{metrics[1]}%</code>"
 
-        send_notification(message)
+        if message != "":
+            send_notification(message)
+            
         time.sleep(2)
 
 
