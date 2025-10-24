@@ -3,7 +3,7 @@ import telebot
 import datetime, time
 import requests
 
-import config
+from notifier import config
 
 
 last_alert = datetime.datetime.now() - datetime.timedelta(minutes=1)
